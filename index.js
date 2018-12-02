@@ -5,7 +5,7 @@ const port = process.env.PORT || 4005
 
 
 app.get('/', (req, res) => {
-    res.send("this is a server")
+    queries.listAll().then(food => res.send(food))
     
 })
 

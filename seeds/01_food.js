@@ -10,8 +10,18 @@ exports.seed = function(knex, Promise) {
           category: "fruit",
           flavor: "savory"
         },
-        {id: 2, colName: 'rowValue2'},
-        {id: 3, colName: 'rowValue3'}
+        {
+          name: "apple", 
+          quantity: 6, 
+          category: "fruit",
+          flavor: "sweet"
+        },
+        {
+          name: "rice", 
+          quantity: 4, 
+          category: "grain",
+          flavor: "savory"
+        },
       ]);
     });
 };
